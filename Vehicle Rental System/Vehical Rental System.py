@@ -213,7 +213,6 @@ class Customer:
                 # return Email, Password
         else:
             print("Invalid Email or Password.")
- 
 
 
 
