@@ -8,7 +8,9 @@ import string as s
 
 # Dictionary of the Vehicles available for rent
 
-Vehicle = {"Car": [{"ID": "C1", "Milage": "200", "Rent": " 300/hour", "Quantity Available": "7 units"},
+
+
+Vehicle_list = {"Car": [{"ID": "C1", "Milage": "200", "Rent": " 300/hour", "Quantity Available": "7 units"},
                    {"ID": "C2", "Milage": "300", "Rent": " 500/hour", "Quantity Available": "9 units"}, 
                    {"ID": "C3", "Milage": "350", "Rent": " 600/hour", "Quantity Available": "11 units"},
                    {"ID": "C3", "Milage": "350", "Rent": " 600/hour", "Quantity Available": "17 units"}, 
@@ -28,10 +30,11 @@ Vehicle = {"Car": [{"ID": "C1", "Milage": "200", "Rent": " 300/hour", "Quantity 
             }
 
 
-for i,j in Vehicle.items():
-    print(f"{i}: ")
-    for k in j:
-        print(f"\nVehicle ID: {k['ID']}\nMilage of Vehicle: {k['Milage']}\nRent/hour: {k['Rent']}\nQuantity Available: {k['Quantity Available']}")
+
+# for i,j in Vehicle_list.items():
+#     print(f"{i}: ")
+#     for k in j:
+#         print(f"\nVehicle ID: {k['ID']}\nMilage of Vehicle: {k['Milage']}\nRent/hour: {k['Rent']}\nQuantity Available: {k['Quantity Available']}")
 
 
                 # Miscellenous Functions
@@ -129,7 +132,7 @@ class Vehicle:
         self.rate = new_rate
 
     def list_vehicle(self):
-        for i,j in Vehicle.items():
+        for i,j in Vehicle_list.items():
             print(f"{i}: ")
             for k in j:
                 print(f"\nVehicle ID: {k['ID']}\nMilage of Vehicle: {k['Milage']}\nRent/hour: {k['Rent']}")
@@ -184,6 +187,8 @@ class Customer:
 
         # self.account
         print(f"You have been registed as: {F_Name} ")
+
+        Vehicle.list_vehicle(self)
         
 
             
@@ -215,6 +220,9 @@ class Customer:
 C1 = Customer()
 C1.customer_menu()
  
+
+
+
 
 
 

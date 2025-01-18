@@ -1,42 +1,47 @@
-def register(self):
-        F_Name = input("Enter your Full Name:  ")
-        Email = check_email()
-        Phone = check_contact()
-        Password = encryp()
-        i=1
-        while self.ws.cell(row= i+1, column= 1).value is not None:
-            i+=1
-        self.ws.cell(row= i+1, column= 1).value = F_Name
-        self.ws.cell(row= i+1, column= 2).value = Email
-        self.ws.cell(row= i+1, column = 3).value = Phone
-        self.ws.cell(row= i+1, column= 4).value = Password
-        print("Account created successfully!!")
-        self.wb.save("VRS.xlsx")
 
-        # self.account
-        print(f"You have been registed as: {F_Name} ")
+Vehicle_list = {"Car": [{"ID": "C1", "Milage": "200", "Rent": " 300/hour", "Quantity Available": "7 units"},
+                   {"ID": "C2", "Milage": "300", "Rent": " 500/hour", "Quantity Available": "9 units"}, 
+                   {"ID": "C3", "Milage": "350", "Rent": " 600/hour", "Quantity Available": "11 units"},
+                   {"ID": "C3", "Milage": "350", "Rent": " 600/hour", "Quantity Available": "17 units"}, 
+                   {"ID": "C3", "Milage": "250", "Rent": " 400/hour", "Quantity Available": "28 units"}],
 
-            
-        # return F_Name, Email, Phone, Password
-    
+            "Cycle": [{"ID": "Cy1", "Milage": 'N/A', "Rent":"120/hour", "Quantity Available": "9 units"},
+                      {"ID": "Cy1", "Milage": 'N/A', "Rent":"150/hour", "Quantity Available": "1 units"},
+                      {"ID": "Cy1", "Milage": 'N/A', "Rent":"100/hour", "Quantity Available": "8 units"},
+                      {"ID": "Cy1", "Milage": 'N/A', "Rent":"110/hour", "Quantity Available": "5 units"},
+                      {"ID": "Cy1", "Milage": 'N/A', "Rent":"140/hour", "Quantity Available": "3 units"}],
+
+            "Bike": [{"ID": "B1", "Milage": "120", "Rent": "240/hour", "Quantity Available": "6 units"},
+                    {"ID": "B1", "Milage": "120", "Rent": "240/hour", "Quantity Available": "5 units"},
+                    {"ID": "B1", "Milage": "120", "Rent": "240/hour", "Quantity Available": "4 units"},
+                    {"ID": "B1", "Milage": "120", "Rent": "240/hour", "Quantity Available": "3 units"},
+                    {"ID": "B1", "Milage": "120", "Rent": "240/hour", "Quantity Available": "2 units"}]
+            }
 
 
-        # Loging in for a customer
 
-    def login(self):
-        Email = input("Enter your Email:    ")
-        Password = decryp()
-        for i in range(2, self.ws.max_row + 1):
-            stored_email = self.ws.cell(row=i, column=2).value
-            stored_password = self.ws.cell(row=i, column=4).value
-            name = self.ws.cell(row=i, column=1).value
-            if stored_email == Email and stored_password == Password:
-                print("Login successful!!")
-                print(f"You have been registed as: {name} ")
-                break
 
-                # return Email, Password
+class Vehicle:
+    def __init__(self):
+        pass
+
+    def check_availability(self):
+        if self.availabilty is True:
+            return "Available"
         else:
-            print("Invalid Email or Password.")
+            return "Not Available"
+        
+    def update_rate(self):
+        new_rate = int(input("Enter the new rate"))
+        self.rate = new_rate
 
+    def list_vehicle(self):
+        for i,j in Vehicle_list.items():
+            print(f"{i}: ")
+            for k in j:
+                print(f"\nVehicle ID: {k['ID']}\nMilage of Vehicle: {k['Milage']}\nRent/hour: {k['Rent']}")
 
+        
+
+V = Vehicle()
+V.list_vehicle()
