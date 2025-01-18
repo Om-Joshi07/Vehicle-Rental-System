@@ -184,6 +184,7 @@ class Customer:
 
         # self.account = 
         print(f"You have been registed as: {F_Name} ")
+        
             
         # return F_Name, Email, Phone, Password
     
