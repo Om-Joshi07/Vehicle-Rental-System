@@ -196,7 +196,7 @@ class Customer:
     
 
 
-        # Loging in for a customer
+        # Loging in for a customer 
 
     def login(self):
         Email = input("Enter your Email:    ")
