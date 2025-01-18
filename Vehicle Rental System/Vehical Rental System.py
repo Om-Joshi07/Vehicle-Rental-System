@@ -27,6 +27,7 @@ Vehicle = {"Car": [{"ID": "C1", "Milage": "200", "Rent": " 300/hour", "Quantity 
                     {"ID": "B1", "Milage": "120", "Rent": "240/hour", "Quantity Available": "2 units"}]
             }
 
+
 for i,j in Vehicle.items():
     print(f"{i}: ")
     for k in j:
@@ -171,7 +172,6 @@ class Customer:
         Email = check_email()
         Phone = check_contact()
         Password = encryp()
-        # for i in range(1,100):
         i=1
         while self.ws.cell(row= i+1, column= 1).value is not None:
             i+=1
@@ -182,9 +182,9 @@ class Customer:
         print("Account created successfully!!")
         self.wb.save("VRS.xlsx")
 
-        # self.account = 
+        # self.account
         print(f"You have been registed as: {F_Name} ")
-        
+
             
         # return F_Name, Email, Phone, Password
     
