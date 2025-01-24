@@ -44,6 +44,7 @@ def check_email():
             continue 
         else:
             return E
+        
 
 # For contact number check
 
