@@ -8,7 +8,7 @@ import string as s
 
 # Dictionary of the Vehicles available for rent
   
-
+ 
 
 Vehicle_list = {"Car": [{"ID": "C1", "Milage": "200", "Rent": " 300/hour", "Quantity Available": "7 units"},
                    {"ID": "C2", "Milage": "300", "Rent": " 500/hour", "Quantity Available": "9 units"}, 
