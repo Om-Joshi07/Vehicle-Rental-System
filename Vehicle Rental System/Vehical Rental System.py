@@ -92,7 +92,7 @@ def decryp():
         E_Pass = input("Enter your password:   ")
         if len(E_Pass) > 8:
             chars = s.punctuation + s.ascii_lowercase + s.digits + s.ascii_uppercase
-            chars = list(chars)
+            chars = list(chars) 
 
             r.seed(11)
             chars_copy = chars.copy()
