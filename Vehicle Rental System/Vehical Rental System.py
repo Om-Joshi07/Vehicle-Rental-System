@@ -31,11 +31,6 @@ Vehicle_list = {"Car": [{"ID": "C1", "Milage": "200", "Rent": " 300/hour", "Quan
 
 
 
-# for i,j in Vehicle_list.items():
-#     print(f"{i}: ")
-#     for k in j:
-#         print(f"\nVehicle ID: {k['ID']}\nMilage of Vehicle: {k['Milage']}\nRent/hour: {k['Rent']}\nQuantity Available: {k['Quantity Available']}")
-
 
                 # Miscellenous Functions
 
