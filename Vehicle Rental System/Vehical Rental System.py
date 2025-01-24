@@ -132,7 +132,7 @@ class Vehicle:
             for k in j:
                 print(f"\nVehicle ID: {k['ID']}\nMilage of Vehicle: {k['Milage']}\nRent/hour: {k['Rent']}")
 
-        
+         
 
 
 # Customer Class
