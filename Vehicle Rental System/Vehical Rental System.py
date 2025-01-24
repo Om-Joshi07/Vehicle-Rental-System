@@ -98,7 +98,7 @@ def decryp():
             chars_copy = chars.copy()
             r.shuffle(chars_copy)
             pass_de = ""
-  
+
             for i in E_Pass:
                 index_ = chars.index(i)
                 pass_de += chars_copy[index_]
