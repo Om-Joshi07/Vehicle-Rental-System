@@ -134,7 +134,6 @@ class Vehicle:
 
          
 
-
 # Customer Class
 
 class Customer:
