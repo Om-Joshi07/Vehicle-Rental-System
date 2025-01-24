@@ -187,7 +187,7 @@ class Customer:
         
 
             
-        # return F_Name, Email, Phone, Password
+        # return F_Name, Email, Phone, 
     
 
 
