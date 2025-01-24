@@ -87,7 +87,7 @@ def encryp():
 
 # Decryption of the Password
 
-def decryp():  
+def decryp(): 
     while True:
         E_Pass = input("Enter your password:   ")
         if len(E_Pass) > 8:
